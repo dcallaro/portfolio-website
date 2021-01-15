@@ -1,94 +1,118 @@
 /*
 Colors used:
 Primary Text Color (Blue): #4262D7;
-
 */
 
 body {
-  font-family: 'Catamaran', san-serif;
+  font-family: 'Catamaran', sans-serif;
   font-size: 16px;
-  font-weight: 400;  /* regular */
+  font-weight: 500;  /* regular */
   line-height: 1.4;
-  }
+}
+
+nav {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
 
 h1 {
   font-family: 'Blenny', catamaran;
   font-size: 4.209em;
   color: #4262D7;
   line-height: 1.0;
-  }
+}
 
 h2 {
   font-size: 1.953em; /* ~31px */
   font-weight: 700 /* bold */
-  }
+}
 
 h3 {
   font-size: 1.563em; /* ~25px */
   font-weight: 600; /* semi-bold */
-  }
+}
 
 h4 {
   font-size: 1.2em; /* ~19px */
   font-weight: 500; /* medium */
 }
 
+.intro {
+  font-size: 1.2em;
+}
+
+sup {
+  font-size: 0.8em;
+  color: #4262D7;
+}
+
+.copyright {
+  font-size: 0.8em;
+}
+
+/*Images*/
+
 img {
   width: 100%;
+}
+
+svg {
+  width: 100%;
+}
+
+svg:hover,
+svg:focus {
+  opacity: 0.65;
 }
 
 a {
   color: #4262D7;
   text-decoration: none; /* No underlining */
 }
-a:visited { /* visited link */
-  color: #4262D7;
-}
-a:active { /* selected link */
-  color: #717171;
-}
 
-a:hover {
-  color: #4262D7;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-
+a:hover,
 a:focus {
   color: #4262D7;
   text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #B6EA82;
 }
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #000000;
   color: #ffffff; /* needed to override the default link color */
-  font-weight: 600;
-  padding: 8px;
+  font-weight: 500;
+  padding: 10px;
   border-radius: 6px;
   border-bottom: 2px solid #E3E3E3; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
-.button:active {
-  color: #717171;
+.button:hover,
+.button:focus {
+  color: #ffffff;
+  opacity: 0.65; /* Reduces the opacity of the button to 80% */
+  text-decoration: underline;
 }
 
-.button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
 
-.button-contact {
-  background-color: transparent;
-  color: #000000;
+.button-contact, .button-resume {
+  background-color: #4262D7;
+  color: #ffffff;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-radius: 6px;
   text-transform: uppercase;
-  border: 2px solid #000000;
 }
 
-.button-contact:hover {
-  background-color: #000000;
+.button-contact:hover, .button-resume:hover,
+.button-contact:focus, .button-resume:focus {
   color: #ffffff;
+  opacity: 0.65;
+  text-decoration: underline;
 }
