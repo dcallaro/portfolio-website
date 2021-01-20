@@ -1,20 +1,16 @@
 /*
 Colors used:
 Primary Text Color (Blue): #4262D7;
+Link Visited Color (Blue 75%): #6A82DA;
 */
-
 
 /*Typography*/
 body {
   font-family: 'Catamaran', sans-serif;
   font-size: 16px;
-  font-weight: 500;  /* regular */
+  font-weight: 400;  /* regular */
   line-height: 1.4;
-}
-
-nav {
-  font-size: 1.2em;
-  text-transform: uppercase;
+  margin: 0;
 }
 
 h1 {
@@ -36,7 +32,7 @@ h3 {
 
 h4 {
   font-size: 1.2em; /* ~19px */
-  font-weight: 500; /* medium */
+  font-weight: 600; /* medium */
 }
 
 .intro {
@@ -48,22 +44,10 @@ sup {
   color: #4262D7;
 }
 
-.copyright {
-  font-size: 0.8em;
-}
 
 /*Images*/
 img {
   width: 100%;
-}
-
-svg {
-  width: 100%;
-}
-
-svg:hover,
-svg:focus {
-  opacity: 0.65;
 }
 
 /*Links*/
@@ -80,6 +64,7 @@ a:focus {
 
 a:active { /* selected link */
   color: #B6EA82;
+  text-decoration: underline;
 }
 
 .button {
@@ -89,7 +74,6 @@ a:active { /* selected link */
   font-weight: 500;
   padding: 7px 14px 7px 14px;
   border-radius: 6px;
-  border-bottom: 2px solid #E3E3E3; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -100,11 +84,11 @@ a:active { /* selected link */
   text-decoration: underline;
 }
 
-
 .button-contact, .button-resume {
   background-color: #4262D7;
   color: #ffffff;
   padding: 5px 15px 5px 15px;
+  margin: 10px 0;
   border-radius: 6px;
   text-transform: uppercase;
 }
@@ -114,4 +98,166 @@ a:active { /* selected link */
   color: #ffffff;
   opacity: 0.65;
   text-decoration: underline;
+}
+
+.button-contact:visited, .button-resume:visited{
+  color: #ffffff;
+  opacity: 0.65;
+  text-decoration: none;
+}
+
+.logo:hover, .logo-social:hover,
+.logo:focus, .logo-social:focus {
+  opacity: 0.65;
+  text-decoration: none;
+}
+
+/*Layout Styling*/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 12px;
+}
+
+header {
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  position: fixed;
+  box-shadow: 4px 4px 5px -1px rgba(50, 50, 50, 0.29);
+}
+
+.logo {
+  max-height: 50px;
+  margin: 0 auto;
+  display: block;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #4262D7;
+  text-decoration: underline;
+}
+
+nav > ul > li > a:active {
+  color: #B6EA82;
+  text-decoration: underline;
+}
+
+main {
+  padding-top: 103px;
+}
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px
+  solid #4a4a4a;
+ }
+
+#contact {
+  padding-top: 20px;
+  display: block;
+  background-color: #EBEBEB;
+}
+
+.copyright {
+  font-size: 0.8em;
+  text-align: left;
+  margin: 0;
+}
+
+.button-contact, .logo-social {
+   display: inline-block;
+   margin: 10px 0;
+ }
+.logo-social {
+  max-width: 48px;
+  max-height: 48px;
+  margin-bottom: 30px;
+}
+
+/* About Page Layout Styling*/
+
+#about {
+  display: block;
+}
+
+h2 {
+  margin: 20px 0px;
+}
+
+h3, h4, ul {
+  margin: 10px 0;
+}
+
+.first {
+  margin-top: 5px;
+}
+
+.headshot {
+  max-width: 200px;
+}
+
+.button-resume {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+/*Project Page Layout Styling*/
+
+#project {
+  display: block;
+  text-align: left;
+}
+
+.section {
+  margin-top: 30px;
+}
+
+.details > h4, .details >p {
+  display: inline-block;
+}
+
+.tools {
+  display: inline-block;
+  max-width: 30px;
+  max-height: 30px;
+  margin: 0 5px;
+}
+
+.inline {
+  display: inline-block;
 }
