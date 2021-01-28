@@ -4,13 +4,14 @@ Primary Text Color (Blue): #4262D7;
 Link Visited Color (Blue 75%): #6A82DA;
 */
 
+
 /*Typography*/
 body {
   font-family: 'Catamaran', sans-serif;
   font-size: 16px;
   font-weight: 400;  /* regular */
   line-height: 1.4;
-  margin: 0;
+  margin: 10px auto;
 }
 
 h1 {
@@ -18,21 +19,30 @@ h1 {
   font-size: 4.209em;
   color: #4262D7;
   line-height: 1.0;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 1.953em; /* ~31px */
-  font-weight: 700 /* bold */
+  font-weight: 700; /* bold */
+  margin: 15px 0px 0px 0px;
 }
 
 h3 {
   font-size: 1.563em; /* ~25px */
   font-weight: 600; /* semi-bold */
+  line-height: 1.0;
+  margin: 10px 0;
 }
 
 h4 {
   font-size: 1.2em; /* ~19px */
   font-weight: 600; /* medium */
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px auto;
 }
 
 .intro {
@@ -48,6 +58,8 @@ sup {
 /*Images*/
 img {
   width: 100%;
+  margin: 10px 0;
+  display: block;
 }
 
 /*Links*/
@@ -122,9 +134,9 @@ a:active { /* selected link */
   padding: 0 12px;
 }
 
-header {
-  padding: 10px 0px 0px 0px;
+#header {
   text-align: center;
+  margin-top: 0;
   background-color: #ffffff;
   width: 100%;
   position: fixed;
@@ -139,11 +151,12 @@ header {
 
 nav {
   display: inline-block;
+  align-items: center;
 }
 
 nav > ul {
   list-style-type: none;
-  padding: 0;
+  padding: 10px 0;
 }
 
 nav > ul > li {
@@ -168,7 +181,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 103px;
+  padding-top: 120px;
 }
 
 #hero {
@@ -187,10 +200,20 @@ main {
   solid #4a4a4a;
  }
 
+.greyscale {
+  filter: grayscale(50%);
+}
+
+.greyscale:hover
+.greyscale:focus {
+  filter: grayscale(0%);
+}
+
 #contact {
-  padding-top: 20px;
+  margin-top: 40px;
+  padding-top: 10px;
   display: block;
-  background-color: #EBEBEB;
+  background-color: #F5FFEA;
 }
 
 .copyright {
@@ -215,16 +238,12 @@ main {
   display: block;
 }
 
-h2 {
-  margin: 20px 0px;
-}
-
-h3, h4, ul {
+ul {
   margin: 10px 0;
 }
 
 .first {
-  margin-top: 5px;
+  margin-top: 0;
 }
 
 .headshot {
@@ -247,17 +266,30 @@ h3, h4, ul {
   margin-top: 30px;
 }
 
-.details > h4, .details >p {
+.center {
+  text-align: center;
+}
+
+.details > h4, .details > p {
   display: inline-block;
+}
+
+.details-tools {
+  margin-top: 0;
 }
 
 .tools {
   display: inline-block;
   max-width: 30px;
   max-height: 30px;
-  margin: 0 5px;
+  margin: 0px 5px;
 }
 
-.inline {
+.inline-block {
   display: inline-block;
+}
+
+.right-align {
+  text-align: right;
+  margin-top: 20px;
 }
