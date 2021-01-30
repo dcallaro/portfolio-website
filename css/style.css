@@ -72,6 +72,12 @@ img {
 .padded-img {
   padding: 0 15px;
 }
+
+.no-margin-img {
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+
 /*Links*/
 a {
   color: #4262D7;
