@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   font-weight: 400;  /* regular */
   line-height: 1.4;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 h1 {
@@ -32,13 +32,13 @@ h3 {
   font-size: 1.563em; /* ~25px */
   font-weight: 600; /* semi-bold */
   line-height: 1.0;
-  margin: 10px 0;
+  margin: 20px 0px 10px 0px;
 }
 
 h4 {
   font-size: 1.2em; /* ~19px */
   font-weight: 600; /* medium */
-  margin: 10px 0;
+  margin: 20px 0px 5px 0px;
 }
 
 p {
@@ -54,14 +54,24 @@ sup {
   color: #4262D7;
 }
 
+.white-text {
+  color: #FFFFFF;
+}
+
+.font-weight-bold {
+  font-weight:700;
+}
 
 /*Images*/
 img {
   width: 100%;
-  margin: 10px 0;
+  margin: 15px 0;
   display: block;
 }
 
+.padded-img {
+  padding: 0 15px;
+}
 /*Links*/
 a {
   color: #4262D7;
@@ -131,7 +141,7 @@ a:active { /* selected link */
 }
 
 .container {
-  padding: 0 12px;
+  padding:0 12px;
 }
 
 #header {
@@ -146,6 +156,7 @@ a:active { /* selected link */
 .logo {
   max-height: 50px;
   margin: 0 auto;
+  padding-top: 10px;
   display: block;
 }
 
@@ -156,7 +167,7 @@ nav {
 
 nav > ul {
   list-style-type: none;
-  padding: 10px 0;
+  padding: 10px 0px 0px 0px;
 }
 
 nav > ul > li {
@@ -181,7 +192,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 102px;
 }
 
 #hero {
@@ -210,8 +221,7 @@ main {
 }
 
 #contact {
-  margin-top: 40px;
-  padding-top: 10px;
+  padding-top: 20px;
   display: block;
   background-color: #F5FFEA;
 }
@@ -257,24 +267,39 @@ ul {
 
 /*Project Page Layout Styling*/
 
-#project {
+#project, #project-breeze, #project-festivity {
   display: block;
   text-align: left;
 }
 
-.section {
-  margin-top: 30px;
+#project-breeze {
+  background-color: #EDF2F2;
+}
+
+#project-festivity {
+    background-image: linear-gradient(black,grey);
+}
+
+.section, .section-last {
+  margin: 40px auto;
+}
+
+.section-last {
+  margin-bottom: 0;
+}
+
+.section-black {
+  background-color: #3B3B3B;
+  border-radius: 15px;
+  padding: 0 10px;
 }
 
 .center {
   text-align: center;
 }
 
-.details > h4, .details > p {
+.details > h4, .details > p, .details > svg {
   display: inline-block;
-}
-
-.details-tools {
   margin-top: 0;
 }
 
@@ -292,4 +317,10 @@ ul {
 .right-align {
   text-align: right;
   margin-top: 20px;
+}
+
+ .final-screen{
+  width: 75%;
+  margin: 0 auto;
+
 }
