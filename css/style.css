@@ -162,7 +162,6 @@ a:active {
 }
 
 #header {
-  text-align: center;
   margin-top: 0;
   background-color: #ffffff;
   width: 100%;
@@ -171,23 +170,36 @@ a:active {
 }
 
 .logo {
-  max-height: 40px;
-  margin: 10px auto 5px auto;
-  display: block;
-}
-
-nav {
+  max-width: 35px;
   display: inline-block;
-  align-items: center;
+  padding-top: 5px;
 }
 
 nav > ul {
   list-style-type: none;
   padding:0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding: 25px 0 0 0;
+
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 nav > ul > li > a {
@@ -208,7 +220,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 102px;
+  padding-top: 75px;
 }
 
 #hero {
@@ -225,6 +237,10 @@ main {
   padding-bottom: 25px;
   border-bottom: 1px
   solid #4a4a4a;
+ }
+
+ #work .row:last-child{
+   border-bottom: 0;
  }
 
 #contact {
@@ -256,6 +272,7 @@ main {
 #about {
   display: block;
 }
+
 
 ul {
   margin: 10px 0;
@@ -345,17 +362,17 @@ ul {
   text-align: left;
 }
 
-.max-height-250 {
-  max-height: 250px;
-  width: auto;
+.justify-center {
+  display: flex;
+  justify-content: center;
 }
 
-.max-height-350 {
-  max-height: 350px;
-  width: auto;
+.max-width-250 {
+  max-width: 250px;
+  height: auto;
 }
 
- .width-75percent{
+.width-75percent{
   width: 75%;
 }
 
@@ -364,21 +381,20 @@ ul {
   padding: 0 0;
 }
 
-#project.bg-fixed {
+#clad body {
   background-image: url("img/clad/mastheads/background@2x.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 100vh;
+  background-color: #FDF6E3;
+  height: 500px;
+  background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .css-animation {
-  width 100%, max-width 100%, height: auto;
-}
-
-.cover {
-  object-fit: cover;
+  width 100;
+  max-width 100%;
+  height: auto;
 }
 
 /*CSS Animation*/
@@ -455,39 +471,6 @@ ul {
   animation: 12s top-left-black-squiggle-down infinite linear
 }
 
-/* Top and Bottom borders go out */
-div.top-bottom-borders-out a:before,
-div.top-bottom-borders-out a:after {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #FFF;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-div.top-bottom-borders-out a:before
-{
-    top: 0px;
-    transform: translateY(10px);
-}
-
-div.top-bottom-borders-out a:after
-{
-    bottom: 0px;
-    transform: translateY(-10px);
-}
-
-div.top-bottom-borders-out a:hover:before,
-div.top-bottom-borders-out a:hover:after
-{
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-
 
 /* Media Queries*/
 
@@ -500,15 +483,29 @@ Medium devices (640px and larger)
   }
 
 .logo {
-  margin: 10px 0;
-  display: inline-block;
   float: left;
 }
 
 nav{
   width: auto;
   float: right;
-  margin-top: 10px;
+  margin-top: 15px;
+}
+
+nav > ul {
+  margin: 1em 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
 }
 
 #hero {
@@ -541,7 +538,7 @@ body {
   width: 50%;
 }
 
-.col-md-7 {
+.col-md-7, .col-md-7-reverse {
   width: 58.33%
 }
 
@@ -553,11 +550,7 @@ body {
   order: 1;
 }
 
-.col-md-6-reverse {
-  order: -1;
-}
-
-.col-md-8-reverse{
+.col-md-6-reverse, .col-md-7-reverse, .col-md-8-reverse{
   order: -1;
 }
 
@@ -570,10 +563,6 @@ body {
   content: "";
   clear: both;
   display: table;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 #work h2, footer {
@@ -593,12 +582,6 @@ body {
   margin: 0 12px 12px 0;
 }
 
-#about .container {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #about .row {
   margin: 40px auto;
 }
@@ -616,7 +599,7 @@ body {
 }
 
 a.button-resume {
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
 }
 
 footer .container {
@@ -625,11 +608,17 @@ footer .container {
   margin-right: auto;
 }
 
-#project-festivity .container, #project .container, #project-breeze .container {
-  padding: 0 40px;
+#project .container, #about .container, #project-festivity .container, #project-breeze .container {
+  padding: 0 50px;
 }
 
-#project-festivity h2, #project-breeze h2, #project h2{
+#about .container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#project-festivity h2, #project-breeze h2, #project h2, #about h2{
   font-size: 1.802em;
 }
 
@@ -667,9 +656,18 @@ footer .container {
   float: right;
 }
 
+.text-align-right {
+text-align: right;
+}
+
 .top-margin-35 {
   margin-top: 35px;
   margin-bottom: 0;
+}
+
+.max-width-150 {
+  max-width: 150px;
+  height: auto;
 }
 
  #project img.max-height-450 {
@@ -682,7 +680,7 @@ footer .container {
   width: auto;
 }
 
-.no-margin-img, #project .no-margin-img img, #project-breeze .no-margin-img img {
+.no-margin-img, #project .no-margin-img img, #project-breeze .no-margin-img img, .no-margin-img-lg {
   margin: 0 0;
   padding: 0 0;
 }
@@ -702,16 +700,25 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
-  .col-md-6 {
-    width: 50%;
-  }
 
   .col-lg-4 {
     width: 33.33%;
   }
 
-  .col-lg-8 {
+  .col-lg-5 {
+    width: 41.66%
+  }
+
+  .col-lg-7, .col-lg-7-reverse {
+    width: 58.33%
+  }
+
+  .col-lg-8, .col-lg-8-reverse {
     width: 66.66%;
+  }
+
+  .col-lg-8-reverse{
+    order: -1;
   }
 
  .container{
@@ -756,6 +763,10 @@ Large devices (1024px or larger)
    width: auto;
  }
 
+ .max-width-250 {
+   max-width: 350px;
+   height: auto;
+ }
 
  .lg-justify-center {
    justify-content: center;

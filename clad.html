@@ -20,6 +20,9 @@
 	<!-- Responsive Screens -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/eab129442b.js" crossorigin="anonymous"></script>
+
  	<!-- Style Sheet -->
 	<link rel="normalize stylecheet" type="text/css" href="github.com/necolas/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -27,7 +30,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="clad">
 	<!-- Open header -->
 	<header> <!-- Open header -->
 		<div id="header" class="container">
@@ -50,9 +53,8 @@
 		</div>
 	</header>
 
-	<main id="project" class="bg-fixed"> <!--Open Main Project Section-->
+	<main id="project"> <!--Open Main Project Section-->
 		<div class="container">
-
 				<div class="section"> <!-- Open Intro Section-->
 					<div class= "center">
 						<h2>CLAD</h2>
@@ -89,24 +91,26 @@
 							classified advertisements. From jobs and communal housing to electronics and furniture,
 							CLAD will help you find exactly what you’re looking for.</p>
 						</div>
-						<div class="col-md-6">
-							<picture>
+						<div class="col-md-6 justify-center">
+							<picture class="no-margin-img">
 								<source srcset="img/clad/overview/overview-screen.jpg" media="(max-width:767px)">
-									<img class="max-height-550" src="img/clad/overview/overview-screen@2x.jpg" alt="Adobe XD">
+									<img class="max-width-250" src="img/clad/overview/overview-screen@2x.jpg" alt="Adobe XD">
 							</picture>
 					</div>
 				</div>
 			</div><!-- Close Overview Section-->
+		</div>  <!-- Close Container-->
 
 			<div class="section">
 				<div>
-					<picture class="cover">
+					<picture>
 						<source srcset="img/clad/mockups/clad-iso-mockup.png" media="(max-width:767px)">
-							<img class="cover" src="img/clad/mockups/clad-iso-mockup@2x.png" alt="Adobe XD">
+							<img src="img/clad/mockups/clad-iso-mockup@2x.png" alt="Adobe XD">
 					</picture>
 				</div>
 			</div>
 
+			<div class="container">
 				<div class="section"> <!-- Open The Problem Section-->
 					<div class="row">
 						<div class="col-md-5">
@@ -116,7 +120,7 @@
 							 and require users to dig for the listings they want.</p>
 						</div>
 						<div class="col-md-7">
-							<picture class = "inline-block">
+							<picture class = "inline-block no-margin-img">
 								<source srcset="img/clad/the-problem/problem.jpg" media="(max-width:767px)">
 								<img src="img/clad/the-problem/problem@2x.jpg" alt="Adobe XD">
 							</picture>
@@ -133,7 +137,7 @@
 								the best results for their needs and easily add their own listings.</p>
 						</div>
 						<div class="col-md-7">
-							<picture class="inline-block">
+							<picture class="inline-block no-margin-img">
 								<source srcset="img/clad/the-solution/solution.jpg" media="(max-width:767px)">
 								<img src="img/clad/the-solution/solution@2x.jpg" alt="Adobe XD">
 							</picture>
@@ -236,74 +240,79 @@
 					<h3>Final Designs</h3>
 
 					<div class="row">
-						<div class="col-md-5 justify-end">
+						<div class="col-md-5 text-align-right">
 							<h4>Product Page</h4>
 							<p>Allows users to view listing details and images, along with information on the listing owner and a
 								call to action button to contact them if interested.</p>
 						</div>
-						<div class="col-md-5">
+						<div class="col-md-6">
 							<picture class="no-margin-img">
 								<source srcset="img/clad/final-designs/listing-details.jpg" media="(max-width:767px)">
-									<img class="max-height-550" src="img/clad/final-designs/listing-details@2x.jpg" alt="Adobe XD">
+									<img class="max-width-250" src="img/clad/final-designs/listing-details@2x.jpg" alt="Adobe XD">
 							</picture>
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="col-md-3">
+					<div>
+						<div>
 							<h4>Filtered Search</h4>
 							<p>View curated listings based on users preferences and apply additional filters to further narrow
 								a search.</p>
 						</div>
-						<div class= "col-md-8-reverse">
-							<picture class= "inline-block no-margin-img">
+						<div class= "center">
+							<picture class= "inline-block">
 								<source srcset="img/clad/final-designs/home-search.jpg" media="(max-width:767px)">
-									<img class= "max-height-350" src="img/clad/final-designs/home-search@2x.jpg" alt="Adobe XD">
+									<img class= "max-width-250" src="img/clad/final-designs/home-search@2x.jpg" alt="Adobe XD">
 							</picture>
-							<picture class= "inline-block no-margin-img">
+							<picture class= "inline-block">
 								<source srcset="img/clad/final-designs/filtered-search.jpg" media="(max-width:767px)">
-									<img class= "max-height-350" src="img/clad/final-designs/filtered-search@2x.jpg" alt="Adobe XD">
+									<img class= "max-width-250" src="img/clad/final-designs/filtered-search@2x.jpg" alt="Adobe XD">
 							</picture>
 						</div>
 
 					</div>
 
 					<div>
-						<div class= "center">
+						<div>
 							<h4>User Profiles</h4>
 							<p>To save time and energy, users only need to create a profile when adding a listing or wanting
 								 to contact a seller.</p>
 						</div>
 						<div class="center">
-							<picture class="inline-block">
+							<picture class="inline-block no-margin-img">
 								<source srcset="img/clad/final-designs/alert.jpg" media="(max-width:767px)">
-									<img class= "max-height-350" src="img/clad/final-designs/alert@2x.jpg" alt="Adobe XD">
+									<img class= "max-width-250" src="img/clad/final-designs/alert@2x.jpg" alt="Adobe XD">
 							</picture>
-							<picture class="inline-block">
+							<picture class="inline-block no-margin-img">
 								<source srcset="img/clad/final-designs/create-profile.jpg" media="(max-width:767px)">
-									<img class= "max-height-350" src="img/clad/final-designs/create-profile@2x.jpg" alt="Adobe XD">
+									<img class= "max-width-250" src="img/clad/final-designs/create-profile@2x.jpg" alt="Adobe XD">
 							</picture>
-							<picture class="inline-block">
+							<picture class="inline-block no-margin-img">
 								<source srcset="img/clad/final-designs/profile.jpg" media="(max-width:767px)">
-									<img class= "max-height-350" src="img/clad/final-designs/profile@2x.jpg" alt="Adobe XD">
+									<img class= "max-width-250" src="img/clad/final-designs/profile@2x.jpg" alt="Adobe XD">
 							</picture>
 						</div>
 					</div>
 
-					<div class="row">
-						<div class= "col-md-3">
+					<div>
+						<div>
 							<h4>Add A Listing</h4>
 							<p>Users simply pick which category their item falls under and share additional details to
 								add a new listing.</p>
 						</div>
-						<div class="col-md-8">
-							<picture class="no-margin-img">
-								<source srcset="img/clad/final-designs/add-listing.jpg" media="(max-width:767px)">
-									<img class="max-height-350" src="img/clad/final-designs/add-listing@2x.jpg" alt="Adobe XD">
+						<div class= "center">
+							<picture class="inline-block">
+								<source srcset="img/clad/final-designs/add-listing-category.png" media="(max-width:767px)">
+									<img class="max-width-250" src="img/clad/final-designs/add-listing-category@2x.png" alt="Adobe XD">
+							</picture>
+							<picture class="inline-block">
+								<source srcset="img/clad/final-designs/add-listing.png" media="(max-width:767px)">
+									<img class="max-width-250" src="img/clad/final-designs/add-listing@2x.png" alt="Adobe XD">
 							</picture>
 						</div>
 					</div>
 				</div> <!-- Close Final Designs Section-->
+			</div> <!-- Close Container-->
 
 				<div class="section"> <!-- Open Mockups Section-->
 					<div>
@@ -318,10 +327,10 @@
 							<img src="img/clad/mockups/mockup-girl@2x.jpg" alt="Adobe XD">
 						</picture>
 					</div>
-
 				</div> <!-- Close Mockups Section-->
 
-				<div> <!-- Open Retrospective Section-->
+
+				<div class=container> <!-- Open Retrospective Section-->
 					<div class="section">
 						<h3>Retrospective</h3>
 						<p>I’ve taken away two major key learnings having completed this project. The first is to build
@@ -338,7 +347,6 @@
 					</div>
 				</div> <!-- Close Retrospective Section-->
 
-			</div>
 	</main> <!-- Close Main Project Section-->
 
 
@@ -364,6 +372,7 @@
 	 <p class="copyright">COPYRIGHT DEVONCALLARO 2021</p>
  </footer> <!--Close Footer Section-->
 
-
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+ 	<script src="js/scripts.js"></script>
 	</body>
 </html>
