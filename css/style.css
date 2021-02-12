@@ -85,7 +85,6 @@ img {
   padding: 0 15px;
 }
 
-
 /*Links*/
 a {
   color: #4262D7;
@@ -191,7 +190,6 @@ nav > ul {
   top: 2px;
   font-size: 20px;
   padding: 25px 0 0 0;
-
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -202,8 +200,16 @@ nav > ul {
   display: block;
 }
 
+.navtoggle.responsive nav {
+  text-align: right;
+}
+
+.navtoggle.responsive li  {
+  padding: 5px 0;
+}
+
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -239,7 +245,7 @@ main {
   solid #4a4a4a;
  }
 
- #work .row:last-child{
+#work .row:last-child{
    border-bottom: 0;
  }
 
@@ -261,6 +267,7 @@ main {
    display: inline-block;
    margin: 10px 0;
  }
+
 .logo-social {
   max-width: 48px;
   max-height: 48px;
@@ -272,7 +279,6 @@ main {
 #about {
   display: block;
 }
-
 
 ul {
   margin: 10px 0;
@@ -381,14 +387,13 @@ ul {
   padding: 0 0;
 }
 
-#clad body {
+#clad {
   background-image: url("img/clad/mastheads/background@2x.png");
   background-color: #FDF6E3;
-  height: 500px;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .css-animation {
@@ -484,12 +489,13 @@ Medium devices (640px and larger)
 
 .logo {
   float: left;
+  margin-left: 10px;
 }
 
 nav{
   width: auto;
   float: right;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 nav > ul {
@@ -730,6 +736,10 @@ Large devices (1024px or larger)
 #header.container {
   max-width: 100%;
 }
+
+#hero {
+  padding-top: 140px;
+  padding-bottom: 200px;
 
 .section {
   margin: 100px auto;

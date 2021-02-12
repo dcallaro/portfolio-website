@@ -31,26 +31,32 @@
 </head>
 
 <body>
+
 	<header> <!-- Open header -->
 		<div id="header" class="container">
-			<a href="index.html">
-				<svg class="logo" xmlns="http://www.w3.org/2000/svg" width="50" height="68" viewBox="0 0 50 68">
-	  			<g id="logo" transform="translate(-551.06 -248.305)">
-	    			<path id="D" d="M0,67.54V.267S36.192-5.316,36.192,34.575C36.192,64.184,16.252,68,5.973,68A35.058,35.058,0,0,1,0,67.54ZM0,.267v0Z" transform="translate(551.06 248.305)" fill="#4262d7"/>
-	    			<path id="C" d="M25.171-.112S0-3.323,0,19.619,25.171,38.578,25.171,38.578" transform="translate(575.889 262.998)" fill="#b6ea82"/>
-					</g>
-				</svg>
-			</a>
-
-      <nav>
-				<ul>
-					<li><a href="index.html#work">Work</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-      </nav>
+			<div id="myNavtoggle" class="navtoggle">
+				<a href="index.html">
+					<svg class="logo" xmlns="http://www.w3.org/2000/svg" width="50" height="68" viewBox="0 0 50 68">
+		  			<g id="logo" transform="translate(-551.06 -248.305)">
+		    			<path id="D" d="M0,67.54V.267S36.192-5.316,36.192,34.575C36.192,64.184,16.252,68,5.973,68A35.058,35.058,0,0,1,0,67.54ZM0,.267v0Z" transform="translate(551.06 248.305)" fill="#4262d7"/>
+		    			<path id="C" d="M25.171-.112S0-3.323,0,19.619,25.171,38.578,25.171,38.578" transform="translate(575.889 262.998)" fill="#b6ea82"/>
+						</g>
+					</svg>
+				</a>
+				<div>
+					<nav >
+						<ul>
+							<li><a href="index.html#work">Work</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+							<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas
+								fa-bars"></i></a></li>
+						</ul>
+		      </nav>
+				</div>
+			</div>
     </div>
-	</header><!-- Close header -->
+	</header> <!-- Close header -->
 
 
   <main><!-- Open Main -->
