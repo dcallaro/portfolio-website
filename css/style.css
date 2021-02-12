@@ -250,7 +250,7 @@ main {
  }
 
 #contact {
-  padding-top: 30px;
+  padding-top: 20px;
   display: block;
   background-color: #F5FFEA;
 }
@@ -271,7 +271,7 @@ main {
 .logo-social {
   max-width: 48px;
   max-height: 48px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 /* About Page Layout Styling*/
