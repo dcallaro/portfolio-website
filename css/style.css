@@ -506,6 +506,9 @@ nav > ul > li {
   display: inline-block;
 }
 
+.navtoggle.responsive li  {
+  padding: 0 0;
+}
 .navtoggle li:not(:last-child) {
   display: inline-block;
 }
