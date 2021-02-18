@@ -8,6 +8,3 @@ function menuToggle() {
       x.className = 'navtoggle';
     }
 }
-
-const ScrollReveal = require('scrollreveal')
-ScrollReveal().reveal('.section')
