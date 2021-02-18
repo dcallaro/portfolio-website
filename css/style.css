@@ -17,9 +17,11 @@ body {
 h1 {
   font-family: 'Blenny', catamaran;
   font-size: 4.209em;
-  color: #4262D7;
+  color: #000000;
   line-height: 1.0;
   margin-bottom: 10px;
+  position: relative;
+  padding-top: 150px;
 }
 
 h2 {
@@ -29,15 +31,16 @@ h2 {
 }
 
 .h2-intro {
-  margin-bottom:40px;
+  margin-bottom:140px;
   font-weight: 500;
+  position: relative;
 }
 
 h3 {
   font-size: 1.383em; /* ~22px */
   font-weight: 600; /* semi-bold */
   line-height: 1.0;
-  margin: 20px 0px 10px 0px;
+  margin: 40px 0px 10px 0px;
 }
 
 h4 {
@@ -46,8 +49,16 @@ h4 {
   margin: 20px 0px 5px 0px;
 }
 
+.plus-top-margin {
+  margin-top: 40px;
+}
+
 p {
   margin: 10px auto;
+}
+
+.no-top-margin {
+  margin-top: 0;
 }
 
 .intro {
@@ -67,14 +78,15 @@ sup {
   font-weight:700;
 }
 
+
 /*Images*/
-img {
+img, .css-animation{
   width: 100%;
   margin: 15px 0;
   display: block;
 }
 
-#work svg {
+#work img {
   width: 100%;
   height: auto;
   margin: 15px 0;
@@ -230,9 +242,27 @@ main {
 }
 
 #hero {
-  padding: 20px 0 60px 0;
+  padding-bottom: 30px;
   display: inline-block;
+  text-align: center;
   width: 100%;
+  background-image: url("../img/work/dc-background-v2.gif");
+  background-color: #FFFFFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 450px auto;
+  position: relative;
+  z-index: -1;
+}
+
+#hero::before {
+  content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255,255,255,0.5);
 }
 
 .row {
@@ -243,6 +273,10 @@ main {
   padding-bottom: 25px;
   border-bottom: 1px
   solid #4a4a4a;
+ }
+
+ #work .container {
+   margin-top: 90px;
  }
 
 #work .row:last-child{
@@ -312,7 +346,7 @@ ul {
 }
 
 .section, .section-last {
-  margin: 40px auto;
+  margin: 50px auto;
 }
 
 .section-last {
@@ -322,7 +356,7 @@ ul {
 .black-bg {
   background-color: #3B3B3B;
   border-radius: 15px;
-  padding: 5px 15px;
+  padding: 1px 15px 20px 15px;
 }
 
 .center, .center-plus-top-margin, .center-plus-bottom-padding {
@@ -388,7 +422,7 @@ ul {
 }
 
 #clad {
-  background-image: url("img/clad/mastheads/background@2x.png");
+  background-image: url("../img/clad/mastheads/background@2x.png");
   background-color: #FDF6E3;
   background-size: cover;
   background-position: center;
@@ -487,6 +521,10 @@ Medium devices (640px and larger)
     text-align: unset;
   }
 
+  header .container {
+    z-index: 9999;
+  }
+
 .logo {
   float: left;
   margin-left: 10px;
@@ -518,13 +556,8 @@ nav > ul > li {
 }
 
 #hero {
-  padding-top: 60px;
-  padding-bottom: 120px;
-  text-align: center;
-}
-
-main {
-  padding-top: 60px;
+  background-size: 550px auto;
+  padding-bottom: 150px;
 }
 
 body {
@@ -574,6 +607,10 @@ body {
   display: table;
 }
 
+h1 {
+  padding-top: 180px;
+}
+
 #work h2, footer {
   text-align: center;
 }
@@ -584,6 +621,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#work img {
+    filter: grayscale(60%);
+}
+
+#work img:hover {
+  filter: grayscale(0%);
 }
 
 .headshot {
@@ -627,7 +672,7 @@ footer .container {
   margin-right: auto;
 }
 
-#project-festivity h2, #project-breeze h2, #project h2, #about h2{
+h2{
   font-size: 1.802em;
 }
 
@@ -640,9 +685,9 @@ footer .container {
 }
 
 #project-festivity img.final-screen, #project-breeze img.final-screen{
-  max-width: 175px;
+  max-width: 200px;
   height: auto;
-  margin: 0 auto;
+  margin: 10 auto;
 }
 
 #project img.final-screen {
@@ -700,6 +745,9 @@ text-align: right;
   display: table;
 }
 
+.center-md {
+  text-align: center;
+}
 
 }
 
@@ -740,12 +788,12 @@ Large devices (1024px or larger)
   max-width: 100%;
 }
 
-#hero {
-  padding-top: 140px;
-  padding-bottom: 200px;
-
 .section {
   margin: 100px auto;
+}
+
+#about.section {
+  margin: 80px auto;
 }
 
 #project-festivity img, #project img {
@@ -754,8 +802,7 @@ Large devices (1024px or larger)
 
 #project-festivity img.final-screen, #project-breeze img.final-screen {
    width: 100%;
-   max-width: 302px;
-   margin: 0 auto;
+   max-width: 250px;
  }
 
  .center-plus-top-margin {
