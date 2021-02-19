@@ -113,6 +113,11 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #4262D7;
+  text-decoration: underline;
+}
+
 a:hover,
 a:focus {
   color: #4262D7;
@@ -121,17 +126,21 @@ a:focus {
 
 a:active {
   color: #B6EA82;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #000000;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 500;
-  padding: 7px 14px 7px 14px;
-  border-radius: 6px;
+  background-color: #4262D7;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 9px 16px 8px 16px;
+  border-radius: 20px;
   transition: 0.3s opacity;
+}
+
+.button:visited  {
+  color: #FFFFFF;
 }
 
 .button:hover,
@@ -139,29 +148,6 @@ a:active {
   cursor: pointer;
   color: #ffffff;
   opacity: 0.65; /* Reduces the opacity of the button to 80% */
-  text-decoration: underline;
-}
-
-.button-contact, .button-resume {
-  background-color: #4262D7;
-  color: #ffffff;
-  padding: 5px 15px 5px 15px;
-  margin: 10px 0;
-  border-radius: 6px;
-  text-transform: uppercase;
-  transition: 0.3s opacity;
-}
-
-.button-contact:hover, .button-resume:hover,
-.button-contact:focus, .button-resume:focus {
-  color: #ffffff;
-  opacity: 0.65;
-  text-decoration: underline;
-}
-
-.button-contact:visited, .button-resume:visited{
-  color: #ffffff;
-  opacity: 0.65;
   text-decoration: none;
 }
 
@@ -279,6 +265,10 @@ main {
   margin: 25px 0;
 }
 
+#work img{
+  height:
+}
+
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px
@@ -298,9 +288,9 @@ main {
  }
 
 #contact {
-  padding-top: 20px;
+  padding-top: 40px;
   display: block;
-  background-color: #F5FFEA;
+  background-color: #F3F5FD;
 }
 
 .copyright {
@@ -311,15 +301,15 @@ main {
   margin-top: 0;
 }
 
-.button-contact, .logo-social {
+.logo-social {
    display: inline-block;
-   margin: 10px 0;
+   margin: 20px 0;
  }
 
 .logo-social {
   max-width: 48px;
   max-height: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* About Page Layout Styling*/
