@@ -31,9 +31,14 @@ h2 {
 }
 
 .h2-intro {
+  font-size: 1.424em;
   margin-bottom:140px;
   font-weight: 500;
   position: relative;
+}
+
+.light-weight{
+  font-weight: 400;
 }
 
 h3 {
@@ -82,7 +87,7 @@ sup {
 /*Images*/
 img, .css-animation{
   width: 100%;
-  margin: 15px 0;
+  margin: 20px 0;
   display: block;
 }
 
@@ -275,7 +280,11 @@ main {
   solid #4a4a4a;
  }
 
- #work .container {
+#work .container {
+  margin-top: 50px;
+}
+
+ #work .container .into {
    margin-top: 90px;
  }
 
@@ -383,9 +392,10 @@ ul {
 }
 
 .tools {
-    display: inline-block;
+  display: inline-block;
   max-width: 30px;
   max-height: 30px;
+  margin-left: 10px;
 }
 
 .inline-block {
@@ -405,6 +415,12 @@ ul {
 .justify-center {
   display: flex;
   justify-content: center;
+}
+
+.align-center {
+  display: flex;
+  align-content: center;
+  justify-content:center;
 }
 
 .max-width-250 {
@@ -556,7 +572,7 @@ nav > ul > li {
 }
 
 #hero {
-  background-size: 550px auto;
+  background-size: 600px auto;
   padding-bottom: 150px;
 }
 
@@ -608,6 +624,7 @@ body {
 }
 
 h1 {
+  margin-top: 100px;
   padding-top: 180px;
 }
 
@@ -714,6 +731,7 @@ h2{
 text-align: right;
 }
 
+
 .top-margin-35 {
   margin-top: 35px;
   margin-bottom: 0;
@@ -721,6 +739,11 @@ text-align: right;
 
 .max-width-150 {
   max-width: 150px;
+  height: auto;
+}
+
+.max-width-400 {
+  max-width: 400px;
   height: auto;
 }
 
@@ -757,9 +780,12 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 
-
   .col-lg-4 {
     width: 33.33%;
+  }
+
+.light-weight{
+    font-size: 3.375em;
   }
 
   .col-lg-5 {
