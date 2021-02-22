@@ -4,7 +4,6 @@ Primary Text Color (Blue): #4262D7;
 Link Visited Color (Blue 75%): #6A82DA;
 */
 
-
 /*Typography*/
 body {
   font-family: 'Catamaran', sans-serif;
@@ -52,7 +51,7 @@ h3 {
   margin: 40px 0px 10px 0px;
 }
 
-h3.h3-intro {
+.h3-intro {
     font-size: 1.424em;
     margin: 20px auto 140px auto;
     font-weight: 500;
@@ -433,8 +432,8 @@ ul {
 }
 
 .css-animation {
-  width 100;
-  max-width 100%;
+  width: 100;
+  max-width: 100%;
   height: auto;
 }
 
@@ -710,15 +709,14 @@ a.button-resume {
 #project-festivity img.final-screen, #project-breeze img.final-screen{
   max-width: 200px;
   height: auto;
-  margin: 10 auto;
+  margin: 10px auto;
 }
 
 #project img.final-screen {
    width: 100%;
    max-width: 180px;
-   margin: 10 auto;
+   margin: 10px auto;
 }
-
 
 #project-festivity .black-bg{
   padding: 5px 40px;
