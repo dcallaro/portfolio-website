@@ -19,31 +19,30 @@ h1 {
   font-size: 4.209em;
   color: #000000;
   line-height: 1.0;
-  margin-bottom: 10px;
+  margin: 80px auto 10px auto;
   position: relative;
-  padding-top: 150px;
+  padding-top: 50px;
+}
+
+.opening {
+  padding-top: 50px;
+  max-width: 390px;
+  margin: 0 auto 0 auto;
 }
 
 h2 {
-  font-size: 1.563em; /* ~25px */
+  font-size: 1.6em; /* ~25px */
   font-weight: 700;
   margin: 15px 0px 0px 0px;
 }
 
-.h2-intro {
-  font-size: 1.424em;
-  margin-bottom:140px;
-  font-weight: 500;
-  position: relative;
+.mission-statement {
+  margin: 30px auto 60px auto;
 }
 
-.light-weight{
-  font-size: 1.953em;
-  font-weight: 400;
-}
-
-#work h2 {
-  font-weight: 500;
+.mission-statement h2{
+  font-family:'Blenny', catamaran;
+  font-size: 2.3em;
 }
 
 h3 {
@@ -51,6 +50,13 @@ h3 {
   font-weight: 600; /* semi-bold */
   line-height: 1.0;
   margin: 40px 0px 10px 0px;
+}
+
+h3.h3-intro {
+    font-size: 1.424em;
+    margin: 20px auto 140px auto;
+    font-weight: 500;
+    position: relative;
 }
 
 h4 {
@@ -65,14 +71,6 @@ h4 {
 
 p {
   margin: 10px auto;
-}
-
-.no-top-margin {
-  margin-top: 0;
-}
-
-.intro {
-  margin: 5px 0;
 }
 
 sup {
@@ -106,6 +104,7 @@ img, .css-animation{
 .padded-img {
   padding: 0 15px;
 }
+
 
 /*Links*/
 a {
@@ -165,7 +164,7 @@ a:active {
 }
 
 .container {
-  padding:0 12px;
+  padding:0 15px;
 }
 
 #header {
@@ -238,36 +237,33 @@ main {
 }
 
 #hero {
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   display: inline-block;
   text-align: center;
   width: 100%;
-  background-image: url("../img/work/dc-background-v2.gif");
+  background-image: url("../img/logos/portfolio-bg@2x.png");
   background-color: #FFFFFF;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: 450px auto;
+  background-repeat:repeat-x;
+  background-size: 320px auto;
   position: relative;
   z-index: -1;
 }
 
 #hero::before {
-  content: "";
+    content: "";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.65);
 }
 
 .row {
   margin: 25px 0;
 }
 
-#work img{
-  height:
-}
 
 #work .row {
   padding-bottom: 25px;
@@ -276,19 +272,15 @@ main {
  }
 
 #work .container {
-  margin-top: 50px;
+  margin-top: 80px;
 }
-
- #work .container .into {
-   margin-top: 90px;
- }
 
 #work .row:last-child{
    border-bottom: 0;
  }
 
 #contact {
-  padding-top: 40px;
+  padding-top: 30px;
   display: block;
   background-color: #F3F5FD;
 }
@@ -303,13 +295,13 @@ main {
 
 .logo-social {
    display: inline-block;
-   margin: 20px 0;
+   margin: 10px auto 20px auto;
+   max-width: 48px;
+   max-height: 48px;
  }
 
-.logo-social {
-  max-width: 48px;
-  max-height: 48px;
-  margin-bottom: 40px;
+.button.contact {
+  margin: 10px auto 30px auto;
 }
 
 /* About Page Layout Styling*/
@@ -341,14 +333,6 @@ ul {
   text-align: left;
 }
 
-#project-breeze {
-  background-color: #EDF2F2;
-}
-
-#project-festivity {
-    background-image: linear-gradient(#000000, #4A4949);
-}
-
 .section, .section-last {
   margin: 50px auto;
 }
@@ -361,6 +345,12 @@ ul {
   background-color: #3B3B3B;
   border-radius: 15px;
   padding: 1px 15px 20px 15px;
+}
+
+#project-festivity .black-bg{
+  padding: 5px 20px;
+  margin-top: 20px;
+  background-color: #17181A;
 }
 
 .center, .center-plus-top-margin, .center-plus-bottom-padding {
@@ -377,11 +367,7 @@ ul {
   padding-bottom: 40px;
 }
 
-.details {
-  vertical-align: middle;
-}
-
-.details > h4, .details > p, .details > svg {
+.details > h4, .details-tools > h4, .details > p, .details > svg {
   display: inline-block;
   margin-top: 0;
 }
@@ -391,6 +377,11 @@ ul {
   max-width: 30px;
   max-height: 30px;
   margin-left: 10px;
+}
+
+.details-tools{
+  margin-bottom: 0;
+  align-content: center;
 }
 
 .inline-block {
@@ -414,8 +405,12 @@ ul {
 
 .align-center {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content:center;
+}
+
+.align-top {
+  align-items: flex-start;
 }
 
 .max-width-250 {
@@ -432,13 +427,9 @@ ul {
   padding: 0 0;
 }
 
-#clad {
-  background-image: url("../img/clad/mastheads/background@2x.png");
-  background-color: #FDF6E3;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+.rise-bg {
+  background-color: #F8F8F8;
+  margin-top: 10px;
 }
 
 .css-animation {
@@ -528,6 +519,12 @@ ul {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+
+  main {
+    padding-top: 100px;
+  }
+
   header {
     text-align: unset;
   }
@@ -567,21 +564,28 @@ nav > ul > li {
 }
 
 #hero {
-  background-size: 600px auto;
-  padding-bottom: 150px;
+  margin: 20px 0;
+}
+
+.opening {
+  max-width: 600px;
+  margin: 0 auto 0 auto;
+}
+
+.mission-statement {
+  margin: 150px auto 150px auto;
 }
 
 body {
   font-size: 18px;
 }
 
-h1 {
-  margin-top: 100px;
-  padding-top: 180px;
-}
-
 h2{
   font-size: 1.802em;
+}
+
+.p-intro {
+  max-width: 640px;
 }
 
 .col-md-3 {
@@ -631,6 +635,10 @@ h2{
   text-align: center;
 }
 
+footer .container {
+  max-width: 100%;
+}
+
 #work .row, #project .row, #project-breeze .row {
   margin: 0;
   padding-bottom: 0;
@@ -639,17 +647,16 @@ h2{
   justify-content: center;
 }
 
+#project .row .align-top{
+  align-items: flex-start;
+}
+
 #work img {
     filter: grayscale(60%);
 }
 
 #work img:hover {
   filter: grayscale(0%);
-}
-
-.headshot {
-  float: left;
-  margin: 0 12px 12px 0;
 }
 
 #about .row {
@@ -673,10 +680,9 @@ a.button-resume {
   margin: 0 auto 20px auto;
 }
 
-footer .container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+.headshot {
+  float: left;
+  margin: 0 12px 12px 0;
 }
 
 #project .container, #about .container, #project-festivity .container, #project-breeze .container {
@@ -690,11 +696,15 @@ footer .container {
 }
 
 .section {
-  margin: 70px auto;
+  margin: 60px auto;
 }
 
 #project-festivity img, #project-breeze img, #project img {
-  margin: 30px auto 60px auto;
+  margin: 30px auto 50px auto;
+}
+
+#project-festivity .row img, #project-breeze .row img, #project .row img {
+  margin-bottom: 30px;
 }
 
 #project-festivity img.final-screen, #project-breeze img.final-screen{
@@ -707,6 +717,12 @@ footer .container {
    width: 100%;
    max-width: 180px;
    margin: 10 auto;
+}
+
+
+#project-festivity .black-bg{
+  padding: 5px 40px;
+  margin-top: 30px;
 }
 
 .final-screen {
@@ -740,6 +756,7 @@ text-align: right;
 .max-width-400 {
   max-width: 400px;
   height: auto;
+  margin: 0 auto 0 auto;
 }
 
  #project img.max-height-450 {
@@ -757,6 +774,11 @@ text-align: right;
   padding: 0 0;
 }
 
+ #project-festivity .no-margin-img img  {
+ margin-top: 20px;
+ padding: 0 5px;
+}
+
 .clearfix::after {
   content: "";
   clear: both;
@@ -767,7 +789,6 @@ text-align: right;
   text-align: center;
 }
 
-}
 
 
 /* ==============================
@@ -778,7 +799,6 @@ Large devices (1024px or larger)
   .col-lg-4 {
     width: 33.33%;
   }
-
 
   .col-lg-5 {
     width: 41.66%
@@ -797,7 +817,7 @@ Large devices (1024px or larger)
   }
 
  .container{
-    max-width: 1000px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -816,6 +836,10 @@ Large devices (1024px or larger)
 
 #project-festivity img, #project img {
   margin: 50px auto;
+}
+
+img.first {
+  margin-top: 20px;
 }
 
 #project-festivity img.final-screen, #project-breeze img.final-screen {
