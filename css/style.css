@@ -344,10 +344,6 @@ ul {
   margin-bottom: 0;
 }
 
-#clad.section:first-child {
-  margin-bottom: 0;
-}
-
 .black-bg {
   background-color: #3B3B3B;
   border-radius: 15px;
@@ -783,7 +779,7 @@ Large devices (1024px or larger)
       max-height: 600px;
       width: auto;
     }
-
+    
     .max-height-350 {
       max-height: 550px;
       width: auto;
