@@ -146,18 +146,22 @@ a:active {
 
 .button:hover,
 .button:focus {
-  cursor: pointer;
+  background-color: #0A33C6;
   color: #ffffff;
-  opacity: 0.65;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  cursor: pointer;
 }
 
-.logo:hover, .logo-social:hover,
-.logo:focus, .logo-social:focus {
+.logo:hover, .logo:focus {
   opacity: 0.65;
   text-decoration: none;
   transition: 0.3s opacity;
+}
+
+.logo-social:hover, .logo-social:focus {
+  transition: 0.3s opacity;
+  fill:  #0A33C6;
+  cursor: pointer;
 }
 
 
