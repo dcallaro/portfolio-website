@@ -239,7 +239,7 @@ nav>ul>li>a:active {
 }
 
 main {
-  padding-top: 75px;
+  padding-top: 125px;
 }
 
 #hero {
@@ -607,7 +607,7 @@ Medium devices (640px and larger)
   }
 
   #project .container, #about .container, #project-festivity .container, #project-breeze .container {
-    padding: 0 50px;
+    padding: 0 100px;
   }
 
   #about .container {
@@ -779,7 +779,7 @@ Large devices (1024px or larger)
       max-height: 600px;
       width: auto;
     }
-    
+
     .max-height-350 {
       max-height: 550px;
       width: auto;
