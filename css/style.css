@@ -851,7 +851,7 @@ Large devices (1024px or larger)
   }
 
   .opening {
-    margin: 0 auto;
+    padding-top: 150px;
   }
 
   h1 {
