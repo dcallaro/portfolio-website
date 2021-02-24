@@ -847,6 +847,6 @@ Large devices (1024px or larger)
 
 @media screen\0 {
   #hero {
-    margin-top: 75px;
+    padding-top: 75px;
   }
 }
