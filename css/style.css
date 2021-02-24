@@ -263,7 +263,7 @@ main {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.65);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .row {
@@ -504,6 +504,7 @@ Medium devices (640px and larger)
   }
 
   #hero {
+    background-size: 350px auto;
     margin: 20px 0;
   }
 
