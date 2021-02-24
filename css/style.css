@@ -844,9 +844,3 @@ Large devices (1024px or larger)
     justify-content: center;
   }
 }
-
-@media screen\0 {
-  #hero {
-    background-color: green;
-  }
-}
