@@ -54,7 +54,7 @@ h3 {
 
 .h3-intro {
   font-size: 1.424em;
-  margin: 20px auto 140px;
+  margin: 20px auto 170px;
   font-weight: 500;
   position: relative;
 }
@@ -238,13 +238,11 @@ nav > ul > li > a:active {
   text-decoration: underline;
 }
 
-main,
-main.background {
+main {
   padding-top: 75px;
 }
 
 #hero {
-  padding-bottom: 60px;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -462,7 +460,7 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   main.background {
-    padding-top: 130px;
+    padding-top: 150px;
   }
 
   header {
