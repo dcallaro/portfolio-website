@@ -847,7 +847,6 @@ Large devices (1024px or larger)
 
 @media screen\0 {
   #hero {
-    padding-top: 75px;
-    background-color: green;
+    padding-top: 150px;
   }
 }
