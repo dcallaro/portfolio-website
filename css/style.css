@@ -312,6 +312,12 @@ main {
   display: block;
 }
 
+#about h2 {
+  font-family: 'Blenny', sans-serif;
+  color: #4262d7;
+  font-size: 2.3em;
+}
+
 ul {
   margin: 10px 0;
 }
@@ -790,6 +796,10 @@ Large devices (1024px or larger)
 
   #about.section {
     margin: 80px auto;
+  }
+
+  .resume {
+    margin-bottom: 10px;
   }
 
   #project-festivity img,
