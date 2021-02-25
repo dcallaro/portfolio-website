@@ -134,7 +134,7 @@ a:active {
   font-weight: 400;
   padding: 9px 16px 8px;
   border-radius: 20px;
-  transition: 0.3s opacity;
+  transition: 0.5s opacity;
 }
 
 .button:visited {
@@ -153,13 +153,14 @@ a:active {
 .logo:focus {
   opacity: 0.65;
   text-decoration: none;
-  transition: 0.3s opacity;
+  transition: 0.5s opacity;
 }
 
 .logo-social:hover,
 .logo-social:focus {
-  transition: 0.3s opacity;
+  transition: 0.5s opacity;
   fill: #0a33c6;
+  text-decoration: none;
   cursor: pointer;
 }
 
