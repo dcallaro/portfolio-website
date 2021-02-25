@@ -9,8 +9,7 @@ body {
   font-family: 'Catamaran', sans-serif;
   font-size: 16px;
   font-weight: 400;
-
-  /* regular */
+  color: #333;
   line-height: 1.4;
   margin: 0 auto;
 }
@@ -886,10 +885,19 @@ X-large devices (1920px or larger)
 
   .opening {
     max-width: 800px;
-    padding-top: 100px;
+    padding-top: 200px;
+  }
+
+  .h3-intro,
+  .p-intro {
+    font-size: 28px;
+    max-width: 850px;
   }
 }
 
+/* ==============================
+Internet Explorer Customizations
+================================= */
 @media screen\0 {
   #hero {
     margin-top: 75px;
